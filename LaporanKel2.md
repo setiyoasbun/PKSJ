@@ -53,8 +53,10 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 
 
 ###Insatalasi XUbuntu
-1. as
-2. as
+1. Langkah pertama sama seperti instalasi ubuntu server kemudian ikuti petunjuk instalasi seperti biasa
+ 	![GitHub Logo](PKSJ/XUBUNTU.JPG)
+
+
 
 ###Langkah instalasi SSH server
 Pada xubuntu yang telah diinstal, silahkan buka terminal dan masukkan sudo apt-get install open-ssh server, dan tunggu hingga instalasi selesai

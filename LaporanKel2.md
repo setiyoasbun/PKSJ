@@ -3,7 +3,7 @@
 ##Pendahuluan
 Laporan ini dibuat sebagai tugas 1 dari mata kuliah Peracangan Keamanan dan Sekuritas Jaringan. Pada laporan ini terdapat penjelasan-penjelasan dan hasil percobaan peneterasi SSH yang kami lakukan. 
 Laporan ini disusun oleh :
-Setiyo Adiwicaksono		:5113100020
+Setiyo Adiwicaksono	:5113100020
 Fajar Ade Putra			:5113100092
 Anwar Rosyidi			:5113100180
 
@@ -53,15 +53,7 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 
 ###Insatalasi XUbuntu
 1. Langkah pertama sama seperti instalasi ubuntu server kemudian ikuti petunjuk instalasi seperti biasa
-	- Install Xubuntu
-	- klik "Continue" untuk menyetujui jika Xubuntu akan mengambil space dari komputer
-	- pilih  "something else" untuk mengatur sendiri partisi yang akan digunakan
-	- New Partition Table
-	- pilih partisi seperti install ubuntu sebelumnya untuk menentukan root dan swap area
-	- pilih region
-	- set username dan password
-	- restart
-![GitHub Logo](PKSJ/XUBUNTU.JPG)
+ 	![GitHub Logo](PKSJ/XUBUNTU.JPG)
 
 ###Langkah instalasi SSH server
 Pada xubuntu yang telah diinstal, silahkan buka terminal dan masukkan sudo apt-get install open-ssh server, dan tunggu hingga instalasi selesai

@@ -35,6 +35,20 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 
 3. Fail2ban : adalah package keamanan yang digunakan untuk mencegah serangan brute-force dan DDoS pada linux. Fail2ban bekerja dengan memonitor jumlah kegagalan login untuk selanjutnya memblok ip address dari login yang gagal tersebut.
 
+##Uji Penetrasi 1 
+###Insatalasi Ubuntu server 
+1. Pertama, silahkan install Virtualbox
+2. Setelah install virtualbox, jalankan virtualbox, dan buat virtualisasi baru dan pilih sesuai dengan yang anda inginkan. Untuk kali ini, ubuntu server dibuat dengan alokasi penggunaan ram 1.5 GB, dan allokasi harddisk yang tetap sebesar 10 GB
 
+	 Membuat virtualisasi baru
+	![GitHub Logo](PKSJ/US1.JPG)
+    Menentukan alokasi RAM
+    ![GitHub Logo](PKSJ/US3.JPG)
+    Menetukan alokasi space hard disk
+    ![GitHub Logo](PKSJ/US7.JPG)
+3. Setelah pembuatan Virtual box baru berhasil, silahkan pilih bootable ubuntu seperti gambar dibawah
+	![GitHub Logo](PKSJ/US8.JPG)
+
+4. Ikuti petunjuk instalasi seperti biasa, hingga ubuntu berhasil di install  	![GitHub Logo](PKSJ/US9.JPG)
 
 

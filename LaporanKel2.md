@@ -52,3 +52,25 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 4. Ikuti petunjuk instalasi seperti biasa, hingga ubuntu berhasil di install  	![GitHub Logo](PKSJ/US9.JPG)
 
 
+###Insatalasi XUbuntu
+1. as
+2. as
+
+###Langkah instalasi SSH server
+Pada xubuntu yang telah diinstal, silahkan buka terminal dan masukkan sudo apt-get install open-ssh server, dan tunggu hingga instalasi selesai
+```
+sudo apt-get install open ssh server
+```
+###Langkah uji penetrasi menggunakan Medusa (Tools untuk SSH Brute Force Attack)
+1. Untuk langkah pengujian, pertama silahkan install dependensi yang mendukung medusa agar bisa di install.
+	![GitHub Logo](PKSJ/P1G2.JPG)
+2.	Setelah itu, silahkan mulai install medusa seperti gambar dibawah
+	![GitHub Logo](PKSJ/P1G1.JPG)
+3.	Setelah instalasi medusa selesai, buatlah sebuah txt yang bisa dibaca oleh medusa dengan format :username:password
+	![GitHub Logo](PKSJ/P1G3.JPG)
+4.	Setelah itu, masukkan syntax medusa
+```
+–h [ip_host] –C [nama_file_buatan].txt –M ssh.
+```
+5. Lihat hasilnya, ketikahasil bruteforce menunjukan success, maka itulah username dan passwordnya
+	![GitHub Logo](PKSJ/P1G4.JPG)

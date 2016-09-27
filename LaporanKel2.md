@@ -51,12 +51,9 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 
 4. Ikuti petunjuk instalasi seperti biasa, hingga ubuntu berhasil di install  	![GitHub Logo](PKSJ/US9.JPG)
 
-
 ###Insatalasi XUbuntu
 1. Langkah pertama sama seperti instalasi ubuntu server kemudian ikuti petunjuk instalasi seperti biasa
  	![GitHub Logo](PKSJ/XUBUNTU.JPG)
-
-
 
 ###Langkah instalasi SSH server
 Pada xubuntu yang telah diinstal, silahkan buka terminal dan masukkan sudo apt-get install open-ssh server, dan tunggu hingga instalasi selesai
@@ -76,3 +73,37 @@ sudo apt-get install open ssh server
 ```
 5. Lihat hasilnya, ketikahasil bruteforce menunjukan success, maka itulah username dan passwordnya
 	![GitHub Logo](PKSJ/P1G4.JPG)
+    
+##Uji Penetrasi 2
+###Instalasi Fail2Ban
+Pada ubuntu server silahkan install fail2ban sebagai countermeasure, dengan cara
+```
+sudo apt-get install fail2ban
+```
+
+###Setting SSH
+1. Untuk setting SSH, saya memanipulasi di bagian penggantian port, dan melakukan "deny" pada user yang tergabung dengan sudoer
+	![GitHub Logo](PKSJ/CobaSSH1.JPG)
+    Mengubah port menjadi 8080
+    ![GitHub Logo](PKSJ/CobaSSH3.JPG)
+    Membuat user tertentu untuk tidak bisa di akses dan sisanya bisa di akses
+2. Lalu dicoba untuk menggunakan medusa
+	![GitHub Logo](PKSJ/CobaSSH2.JPG)
+    Bisa dilihat, karena port diubah, medusa tidak bisa membuka karena port tidak default
+    
+3. Lalu dicoba test untuk masuk menggunakan user "desktop"
+	![GitHub Logo](PKSJ/CobaSSH4.JPG)
+    Bisa dilihat, user tidak bisa login, dan muncul permission denied
+4. Dan coba masuk menggunakan user "coba"
+	![GitHub Logo](PKSJ/CobaSSH5.JPG)
+    Bisa dilihat, user bisa login karena tidak masuk deny user
+    
+###Setting Fail2Ban
+1. Untuk setting fail2ban, saya membuat setting "maxretry" menjadi 3, jadi ketika gagal login selama 3 kali, maka client yang mencoba masuk akan terkena ban sesuai dengan "bantime". Untuk "bantime" saya isi angka 600
+	![GitHub Logo](PKSJ/CobaFail1.JPG)
+2. Lalu dicoba untuk menyerang menggunakan medusa
+	![GitHub Logo](PKSJ/CobaFail2.JPG)
+    Terlihat bahwa penyerangan di ban karena sudah lebih dari 3 kali coba, dan akan abort
+3. Lalu dicoba untuk melakukan SSH setelah melakukan hal tersebut
+	![GitHub Logo](PKSJ/CobaFail3.JPG)
+    Bisa dilihat ketika itu juga, tidak bisa di SSH karena masih dalam masa Ban

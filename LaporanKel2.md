@@ -112,3 +112,6 @@ sudo apt-get install fail2ban
 3. Lalu dicoba untuk melakukan SSH setelah melakukan hal tersebut
 	![GitHub Logo](PKSJ/CobaFail3.JPG)
     Bisa dilihat ketika itu juga, tidak bisa di SSH karena masih dalam masa Ban
+    
+##Kesimpulan
+Dengan menggunakan fail2ban, dan mengedit konfigurasi dari ssh, maka server akan lebih kompleks untuk di brute-force karena editan tersebut mencegah terjadinya brute-force dengan mudah.

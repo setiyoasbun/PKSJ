@@ -45,7 +45,7 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 	![GitHub Logo](PKSJ/US1.JPG)
     
 	b. Menentukan alokasi RAM
-    ![GitHub Logo](PKSJ/US3.JPG)
+	![GitHub Logo](PKSJ/US3.JPG)
     
 	c. Menetukan alokasi space hard disk
     ![GitHub Logo](PKSJ/US7.JPG)

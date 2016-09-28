@@ -41,13 +41,13 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 
 2. Setelah install virtualbox, jalankan virtualbox, dan buat virtualisasi baru dan pilih sesuai dengan yang anda inginkan. Untuk kali ini, ubuntu server dibuat dengan alokasi penggunaan ram 1.5 GB, dan allokasi harddisk yang tetap sebesar 10 GB
 
-	Membuat virtualisasi baru
+	a. Membuat virtualisasi baru
 	![GitHub Logo](PKSJ/US1.JPG)
     
-    Menentukan alokasi RAM
+	b. Menentukan alokasi RAM
     ![GitHub Logo](PKSJ/US3.JPG)
     
-    Menetukan alokasi space hard disk
+	c. Menetukan alokasi space hard disk
     ![GitHub Logo](PKSJ/US7.JPG)
     
 3. Setelah pembuatan Virtual box baru berhasil, silahkan pilih bootable ubuntu seperti gambar dibawah

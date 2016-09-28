@@ -3,7 +3,7 @@
 ##Pendahuluan
 Laporan ini dibuat sebagai tugas 1 dari mata kuliah Peracangan Keamanan dan Sekuritas Jaringan. Pada laporan ini terdapat penjelasan-penjelasan dan hasil percobaan peneterasi SSH yang kami lakukan. 
 Laporan ini disusun oleh :
-Setiyo Adiwicaksono	:5113100020
+Setiyo Adiwicaksono		:5113100020
 Fajar Ade Putra			:5113100092
 Anwar Rosyidi			:5113100180
 
@@ -45,6 +45,7 @@ Lakukan uji penetrasi 2 dengan tools yang sama dan catat hasilnya
 	![GitHub Logo](PKSJ/US1.JPG)
     
 	b. Menentukan alokasi RAM
+    
 	![GitHub Logo](PKSJ/US3.JPG)
     
 	c. Menetukan alokasi space hard disk

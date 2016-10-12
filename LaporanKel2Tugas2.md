@@ -110,5 +110,11 @@ sudo chown -R demo:www-data *
 mkdir /var/www/html/wp-content/uploads
 sudo chown -R :www-data /var/www/html/wp-content/uploads
 ```
-
+7. Selanjutnya lakukan konfigurasi dengan membuka halaman wordpress yang telah kita install
+![GitHub Logo](PKSJ2/setwp.JPG)
+![GitHub Logo](PKSJ2/setsuk.JPG)
+8. Proses instalasi selesai dan kita bisa membuka halaman wp-admin
+![GitHub Logo](PKSJ2/wpadmin.JPG)
+### Hasil halaman wordpress yang berhasil diinstall
+![GitHub Logo](PKSJ2/sip.JPG)
 

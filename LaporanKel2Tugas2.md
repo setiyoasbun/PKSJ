@@ -46,19 +46,19 @@ untuk mengetahui apabila php sudah terinstall silahkan buat file php di var/www/
 ![GitHub Logo](PKSJ2/php.JPG)
 
 5. Buat database untuk wordpress
-- log in ke dalam mysql root
+	- log in ke dalam mysql root
 ```
 mysql -u root -p
 ```
--  Buat database wordpress
+	-  Buat database wordpress
 ```
 CREATE DATABASE wordpress;
 ```
-- buat user untuk akses database
+	- buat user untuk akses database
 ```
 CREATE USER wordpressuser@localhost IDENTIFIED BY 'password';
 ```
-- Berikan privileges akses kepada akun db yang kita buat
+	- Berikan privileges akses kepada akun db yang kita buat
 ```
 GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@localhost;
 ```
@@ -66,6 +66,7 @@ GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@localhost;
 FLUSH PRIVILEGES;
 exit
 ```
+
 ## Download wordpress
 1. Lakukan download wordpress dengan memasukan syntax
 ```
@@ -120,10 +121,18 @@ sudo chown -R :www-data /var/www/html/wp-content/uploads
 ![GitHub Logo](PKSJ2/sip.JPG)
 
 ## Instalasi Plugin Wordpress
-1. Silahkan buka bagian **wp-admin** dan silahkan buka bagian menu plugin. Lalu silahkan tekan tombol bagian **Add New**
+1. Download plugin yang ingin di install secara manual
+
+2. Untuk kuliah PKSJ ini download plugin yang ingin digunakan di https://www.exploit-db.com yaitu:
+	- Video Player 1.5.16
+	- LeagueManager 3.9.11
+
+3. Silahkan buka bagian **wp-admin** dan silahkan buka bagian menu plugin. Lalu silahkan tekan tombol bagian **Add New**
 ![GitHub Logo](PKSJ2/plugin.JPG)
 
-2. Silahkan tekan tombol upload plugin untuk mengupload plugin yang kita download secara external, ataupun langusng di search pada kolom serch plugin. Setelah muncul tombolo browse, silahkan pilih plugin mana yang ingin di install, dan silahkan langsung di install
+4. Silahkan tekan tombol upload plugin untuk mengupload plugin yang kita download secara external, ataupun langsung di search pada kolom serch plugin. 
+
+5. Setelah muncul tombol browse, silahkan pilih plugin mana yang ingin di install, dan silahkan langsung di install
 ![GitHub Logo](PKSJ2/plugin1.JPG)
 
 ## Exploit Wordpress Menggunakan Tools SQLMAP dan WPSCAN

@@ -132,7 +132,7 @@ Fungsi penggunaan wpscan dalam exploit kali ini adalah untuk mendeteksi celah ke
 wpscan --url http://[url yang dituju] -enumerate
 ```
 Maka akan muncul tanda yang menunjukan celah keamanan dari plugin yang sudah di install pada wordpress
-![GitHub Logo](PKSJ2/wpscan.JPG)
+![GitHub Logo](PKSJ2/wpscan2.JPG)
 
 ###Exploit dan Inject Sql menggunakan Sqlmap pada plugin league manager
 1. Silahkan jalankan perintah dibawah ini untuk mengetahui bagaimana struktur tabel dari wordpress yang ada

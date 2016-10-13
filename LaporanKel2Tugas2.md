@@ -165,3 +165,10 @@ Mendownload file passwd.passwd
 ![GitHub Logo](PKSJ2/jebol2.JPG)
 Isi dari file passwd.passwd
 
+##Kesimpulan
+
+Dari hasil uji coba penetrasi SQL Injection didapatkan bahwa masih terdapat celah-celah yang dapat ditembus, kita dapat melakukan SQL Injection melalui celah yang terdapat pada plugin yang belum update walaupun wordpress sudah paling update terbaru.
+
+##Saran
+
+Periksalah update-update pada wordpress dan pluginya secara berkala, jika terdapat update pada wordpress dan plugin-plugin yang terinstall, segeralah untuk melakukan update karena celah-celah SQL Injection bisa terdapat pada plugin yang belum update tersebut.

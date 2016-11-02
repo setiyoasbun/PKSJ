@@ -1,6 +1,6 @@
 # Laporan Tugas 3 PKSJ
 ## Pendahuluan
-Laporan ini dibuat sebagai tugas 3 dari mata kuliah Peracangan Keamanan dan Sekuritas Jaringan. Pada laporan ini terdapat penjelasan-penjelasan dan hasil percobaan Analisis Malware berformat Doc yang kami lakukan. 
+Laporan ini dibuat sebagai tugas 3 dari mata kuliah Peracangan Keamanan dan Sekuritas Jaringan (PKSJ). Pada laporan ini terdapat penjelasan-penjelasan dasar teori dan hasil percobaan Analisis Malware berformat Doc yang kami lakukan dan juga analisisnya. 
 Laporan ini disusun oleh :
 Setiyo Adiwicaksono		:5113100020
 Fajar Ade Putra			:5113100092
@@ -16,7 +16,7 @@ Windows XP adalah jajaran sistem operasi berbasis grafis yang dibuat oleh Micros
 
 ###Tools yang Digunakan
 1. Cuckoo
-Adalah sebuah tools yang digunakan untuk melakukan malware analysis. Dasar dari Cuckoo ini adalah python
+Adalah sebuah tools yang digunakan untuk melakukan malware analysis sebuah suspect dalam bentuk malware atau yang biasanya orang tau Maware Analysis Research Toolkit (MART). Kita bisa melakukan upload file yang kita curigai mengandung malware untuk dianalisis oleh Cuckoo Sandbox secara otomatis, Cuckoo Sandbox merupakan tools yang open source. Dasar dari Cuckoo ini adalah python. 
 2. VirtualBox
 Virtualbox adalah software milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama.
 
@@ -147,7 +147,5 @@ dan jalankan file submit.py
 dan berikut adalah guest OS yang telah terinfeksi
 ![GitHub Logo](Gambar/infrct.png)
 
-
-
-
-
+###Kesimpulan dan Saran
+##Kesimpulan

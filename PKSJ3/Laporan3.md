@@ -118,9 +118,34 @@ cp /home/digit/cuckoo/agent/agent.py /home/digit/cuckoo/shares/
 ```
 11. Di windows Guest OS, copy **agent.py** ke **C:\Python27** folder
 12. Rename **agent.py** menjadi **agent.pyw**
+	![GitHub Logo](Gambar/agent.png)
 
+###Konfigurasi cuckoo
+1. Buka directory /conf dan buka file virtualbox.conf
+2. Ganti nama label, dan machine sesuai dengan nama machine yang diinstal pada virtualbox
 
-
+###ujicoba
+Pada ujicoba telah disiapkan satu buah file malware untuk dimasukan ke dalam guest OS
+![GitHub Logo](Gambar/virus.png)
+Langkah-langkah melakukan analisis
+1. Buka terminal dan jalankan cuckoo
+```
+python cuckoo.py
+```
+![GitHub Logo](Gambar/cuko.png)
+2. Buka terminal lain kemudian masuk ke directory
+ ```
+/cuckoo/utils
+```
+dan jalankan file submit.py
+```
+./utils/submit.py /path/to/binary
+```
+![GitHub Logo](Gambar/cukoinject.png)
+3. kemudian cuckoo akan melakukan analisis dan akan keluar file lognya
+![GitHub Logo](Gambar/cukorepot.png)
+dan berikut adalah guest OS yang telah terinfeksi
+![GitHub Logo](Gambar/infrct.png)
 
 
 

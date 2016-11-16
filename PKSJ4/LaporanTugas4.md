@@ -19,8 +19,34 @@ disusun oleh :
 
 ### Instalasi snort
 1. Install library yang dibutuhkan snort yaitu : liblzma-dev, opensslm libssl-dev dengan cara
-
 ```
 sudo apt-get install -y zlib1g-dev liblzma-dev openssl libssl-dev
 ```
-2. 
+2. Setelah menginstall library diatas, maka kita siap untuk install Snort
+```
+cd ~/snort_src
+wget https://snort.org/downloads/snort/snort-2.9.8.0.tar.gz
+tar -xvzf snort-2.9.8.0.tar.gz
+cd snort-2.9.8.0
+./configure --enable-sourcefire
+make
+sudo make install
+```
+3. Jika mengalami kesulitan maka bisa dibantu dengan melihat semua list compile-time	
+```
+n ./configure --help
+```
+4. Jalankan perintah berikut untuk memperbaharui shared library	
+```
+sudo ldconfig
+```
+5. Tempatkan snort binary di usr/sbin:
+```
+sudo ln -s /usr/local/bin/snort /usr/sbin/snort
+```
+6. Untuk melihat snortnya udah keinstall jalankan perintah berikut
+```
+snort -V
+```
+
+###Konfigurasi Snort

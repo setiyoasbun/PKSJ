@@ -129,3 +129,20 @@ Snort successfully validated the configuration!
 Snort exiting
 user@snortserver:~$
 ```
+###Pengaturan Rules untuk Snort
+1. Silahkan buka **/etc/snort/rules/local.rules** dan silahkan isi rules yang diingikan. Untuk contoh dibawah adalah contoh untuk mengeluarkan log ketika ada ping dari tempat lain
+```
+alert icmp any any -> $HOME_NET any (msg:"ICMP test detected"; GID:1; sid:10000001; rev:001; classtype:icmpevent;)
+```
+2. Setiap ada pergantian configurasi snort, jangan lupa lakukan comamand di bawah ini
+```
+sudo snort -T -c /etc/snort/snort.conf -i eth0
+```
+3. Lalu silahkan jalankan kode dibawah untuk menjalankan snort yang sudah di konfigurasi
+```
+sudo /usr/local/bin/snort -d -A console -q -u snort -g snort -k all -c /etc/snort/snort.conf -i eth0
+```
+4. Setelah itu, dari host kita ping ke server yang diinstal snort, maka akan muncul log yang menunjukan bahwa snort mendeteksi ping tersebut
+![GitHub Logo](PKSJ/hasil2.PNG)
+
+5. Untuk mendeteksi hal hal lainnya, kita bisa mengubah pada rules, bagian **classtype** dengan classtype lain untuk mendeteksi serangan-serangan lainnya

@@ -34,7 +34,7 @@ sudo make install
 ```
 3. Jika mengalami kesulitan maka bisa dibantu dengan melihat semua list compile-time	
 ```
-n ./configure --help
+./configure --help
 ```
 4. Jalankan perintah berikut untuk memperbaharui shared library	
 ```
@@ -134,7 +134,7 @@ user@snortserver:~$
 ```
 alert icmp any any -> $HOME_NET any (msg:"ICMP test detected"; GID:1; sid:10000001; rev:001; classtype:icmpevent;)
 ```
-2. Setiap ada pergantian configurasi snort, jangan lupa lakukan comamand di bawah ini
+2. Setiap ada pergantian configurasi snort, jangan lupa lakukan command di bawah ini
 ```
 sudo snort -T -c /etc/snort/snort.conf -i eth0
 ```
